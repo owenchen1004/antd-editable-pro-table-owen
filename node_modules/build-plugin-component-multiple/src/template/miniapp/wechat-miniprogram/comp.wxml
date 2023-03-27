@@ -1,0 +1,1 @@
+<import src="./root.wxml"/><template is="RAX_TMPL_ROOT_CONTAINER" data="{{r: r}}" />

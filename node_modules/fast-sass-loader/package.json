@@ -1,0 +1,85 @@
+{
+  "name": "fast-sass-loader",
+  "description": "fast sass loader for Webpack",
+  "version": "2.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard --fix && npm-ensure -t deps",
+    "test": "npm run lint && npm run test-local",
+    "perf": "node perf/index.js",
+    "test-local": "mocha test/**/*.test.js",
+    "test-cov": "nyc npm run test-local",
+    "ci": "npm run lint && npm run test-cov",
+    "release": "npm test && npm-ensure -t changelog && git release $npm_package_version && npm publish",
+    "precommit": "standard && npm-ensure -t deps"
+  },
+  "ensure": {
+    "deps": {
+      "checkDirs": [
+        "lib/**/*"
+      ]
+    }
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "json",
+      "lcov"
+    ]
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "it",
+      "beforeEach",
+      "afterEach"
+    ],
+    "ignore": [
+      "/test",
+      "/perf"
+    ]
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "cli-source-preview": "^1.0.0",
+    "co": "^4.6.0",
+    "fs-extra": "3.x",
+    "loader-utils": "^1.1.0"
+  },
+  "peerDependencies": {
+    "webpack": "1.x || 2.x || 3.x || 4.x || 5.x",
+    "sass": "1.x"
+  },
+  "devDependencies": {
+    "coveralls": "^2.12.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "fast-css-loader": "^1.0.2",
+    "file-loader": "^0.9.0",
+    "husky": "*",
+    "mocha": "^3.2.0",
+    "npm-ensure": "^1.1.0",
+    "nyc": "*",
+    "prettier": "^1.19.1",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.1",
+    "sass": "^1.32.8",
+    "sass-loader": "^6.0.3",
+    "standard": "*",
+    "webpack": "3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yibn2008/fast-sass-loader.git"
+  },
+  "keywords": [
+    "sass-loader",
+    "fast"
+  ],
+  "author": "yibn2008",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yibn2008/fast-sass-loader/issues"
+  },
+  "homepage": "https://github.com/yibn2008/fast-sass-loader#readme"
+}

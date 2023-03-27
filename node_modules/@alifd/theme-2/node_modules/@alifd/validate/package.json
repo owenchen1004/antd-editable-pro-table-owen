@@ -1,0 +1,78 @@
+{
+  "name": "@alifd/validate",
+  "version": "1.2.3",
+  "description": "Validation to be used with @alifd/field",
+  "files": [
+    "demo/",
+    "lib/",
+    "build/"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "ice-scripts dev",
+    "build": "ice-scripts build",
+    "prepublishOnly": "npm run build",
+    "test": "ice-scripts test",
+    "test-watch": "ice-scripts test --jest-watchAll",
+    "precommit": "lint-staged",
+    "eslint": "eslint '@(src|test)/**/*.@(js|jsx)'"
+  },
+  "lint-staged": {
+    "@(src|scripts|docs/*/demo)/**/*.@(js|jsx)": [
+      "prettier --write"
+    ],
+    "@(src|scripts|docs/*/demo)/**/*.@(js|jsx|md)": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "devDependencies": {
+    "@alifd/eslint-config-next": "^2.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.0",
+    "ice-plugin-component": "^0.1.1",
+    "ice-plugin-fusion": "^0.1.4",
+    "ice-scripts": "^2.0.0",
+    "lint-staged": "^9.2.0",
+    "mocha": "^6.1.4",
+    "power-assert": "^1.6.1",
+    "prettier": "^1.18.2",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "semantic-release": "^17.2.3",
+    "sinon": "^7.3.2"
+  },
+  "componentConfig": {
+    "name": "validate",
+    "title": "Validate",
+    "categories": [
+      "表单"
+    ]
+  },
+  "homepage": "https://unpkg.com/@alifd/validate@1.2.3/build/index.html",
+  "bugs": "https://github.com/alibaba-fusion/validate/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba-fusion/validate.git"
+  }
+}

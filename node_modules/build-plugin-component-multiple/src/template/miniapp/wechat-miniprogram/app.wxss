@@ -1,0 +1,2 @@
+@import 'default.wxss';
+@import './bundle.css.wxss';

@@ -1,0 +1,24 @@
+module.exports = {
+  a: function (v, dv) {
+    return v === undefined ? dv : v;
+  },
+  b: function (level) {
+    return 'RAX_TMPL_CHILDREN_' + level;
+  },
+  c: function (nodeType, chains) {
+    if (!nodeType) nodeType = 'h-element';
+    var items = chains.split(',');
+    var level = 0;
+
+    for (var i = 0; i < items.length; i++) {
+      if (nodeType === items[i]) {
+        level = level + 1;
+      }
+    }
+    var templateName = 'RAX_TMPL_' + level + '_' + nodeType;
+    return templateName;
+  },
+  d: function (chains, nodeType) {
+    return chains + ',' + nodeType;
+  },
+};
