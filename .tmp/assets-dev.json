@@ -51,7 +51,7 @@
     },
     {
       "package": "zw-edit-protable",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "library": "BizComps",
       "urls": [
         "./render/default/view.js",
@@ -83,32 +83,10 @@
       }
     },
     {
-      "exportName": "AlilcAntdLowcodeMaterialsMeta",
-      "npm": {
-        "package": "@alilc/antd-lowcode-materials",
-        "version": "1.0.7"
-      },
-      "url": "https://cdn.scredit.sg/th/seada/live/antd-lowcode-materials@1.0.7/lowcode/meta.js",
-      "urls": {
-        "default": "https://cdn.scredit.sg/th/seada/live/antd-lowcode-materials@1.0.7/lowcode/meta.js"
-      }
-    },
-    {
-      "exportName": "AlilcAntdLowcodeMaterialsMeta",
-      "npm": {
-        "package": "@alilc/antd-lowcode-materials",
-        "version": "1.0.7"
-      },
-      "url": "https://cdn.scredit.sg/th/seada/live/antd-lowcode-materials@1.0.7/lowcode/meta.js",
-      "urls": {
-        "default": "https://cdn.scredit.sg/th/seada/live/antd-lowcode-materials@1.0.7/lowcode/meta.js"
-      }
-    },
-    {
       "exportName": "ZwEditProtableMeta",
       "npm": {
         "package": "zw-edit-protable",
-        "version": "1.0.6"
+        "version": "1.0.7"
       },
       "url": "./meta.js",
       "urls": {

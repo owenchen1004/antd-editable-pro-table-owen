@@ -11,7 +11,7 @@ export * from 'D:\\lowcode platform\\material\\zw-edit-protable\\zw-edit-protabl
 const coveredComponents = {};
 
 const library = 'BizComps';
-const execCompile = !!false;
+const execCompile = !!true;
 
 if (!execCompile) {
   window[library] = Object.assign({__esModule: true}, componentInstances || {}, coveredComponents || {});

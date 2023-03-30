@@ -1,6 +1,6 @@
 {
   "name": "zw-edit-protable",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "zw-edit-protable",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -76,6 +76,6 @@
   },
   "componentConfig": {
     "isComponentLibrary": true,
-    "materialSchema": "https://unpkg.com/zw-edit-protable@1.0.6/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/zw-edit-protable@1.0.7/build/lowcode/assets-prod.json"
   }
 }

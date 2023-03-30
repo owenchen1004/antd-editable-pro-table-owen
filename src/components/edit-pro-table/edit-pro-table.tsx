@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable object-shorthand */
 /* eslint-disable react-hooks/rules-of-hooks */
-import { ActionType, EditableProTable, ProColumnType } from '@ant-design/pro-components';
+import { ActionType, EditableProTable } from '@ant-design/pro-components';
 import React, { createElement, Component, createRef } from 'react';
 import { defineGetterProperties } from '../../shared/index';
 
@@ -26,7 +26,8 @@ export type EditProTableProps = React.ComponentProps<typeof EditableProTable> & 
 
 // export const actionRef = useRef<ActionType>();
 
-class EditProTable extends Component<EditProTableProps, any> {
+class EditProTable extends Component<EditProTableProps, any>{
+
   actionRef = createRef<ActionType>();
 
   componentDidMount() {
@@ -68,11 +69,13 @@ class EditProTable extends Component<EditProTableProps, any> {
         return columnData;
       }
     }
-
+    
     return (
       <EditableProTable
         {...this.props}
-        value = {dataSource === undefined ? undefined :dataSource()}
+        pagination = {false}
+        search = {false}
+        value = {dataSource === undefined ? this.props.value :dataSource()}
         columns={columData()}
         toolBarRender={toolBarRenderFunc()}
         toolbar={{

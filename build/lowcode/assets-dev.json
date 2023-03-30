@@ -51,7 +51,7 @@
     },
     {
       "package": "zw-edit-protable",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "library": "BizComps",
       "urls": [
         "./render/default/view.js",
@@ -86,7 +86,7 @@
       "exportName": "ZwEditProtableMeta",
       "npm": {
         "package": "zw-edit-protable",
-        "version": "1.0.6"
+        "version": "1.0.7"
       },
       "url": "./meta.js",
       "urls": {

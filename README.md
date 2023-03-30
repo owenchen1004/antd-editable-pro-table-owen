@@ -42,3 +42,6 @@ onClick(e, { record }){
 
 1.0.6
 结合FunctionSetter和Arraysetter合并获得columns
+
+1.0.7
+测试版本：禁用搜索和分页

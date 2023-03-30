@@ -832,7 +832,7 @@ const EditProTableMeta: ComponentMetadata = {
         ],
       },
       {
-        title: '分页',
+        title: '分页(已禁用)',
         display: 'block',
         type: 'group',
         items: [
@@ -1524,7 +1524,7 @@ const EditProTableMeta: ComponentMetadata = {
         ],
       },
       {
-        title: '搜索设置',
+        title: '搜索设置(已禁用)',
         display: 'block',
         type: 'group',
         items: [

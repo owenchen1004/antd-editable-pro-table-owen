@@ -71,7 +71,9 @@ var EditProTable = /*#__PURE__*/function (_Component) {
       }
     };
     return /*#__PURE__*/React.createElement(EditableProTable, _extends({}, this.props, {
-      value: dataSource === undefined ? undefined : dataSource(),
+      pagination: false,
+      search: false,
+      value: dataSource === undefined ? this.props.value : dataSource(),
       columns: columData(),
       toolBarRender: toolBarRenderFunc(),
       toolbar: {
